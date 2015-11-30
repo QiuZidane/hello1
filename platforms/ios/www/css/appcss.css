@@ -1,0 +1,11 @@
+body {
+    background: #ff0;
+}
+
+div#main {          /*#是id选择器*/
+    background: #ccf;
+    height: 460px;
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+}
