@@ -5,7 +5,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         {
             "file":"plugins/helloCordovaPlugin.js",
             "id":"cordova-plugin-helloCordovaPlugin.helloCordovaPlugin", // 插件的模块编号
-            "merges":["navigator.helloCordovaPlugin"];  
+            "merges":["navigator.helloCordovaPlugin"]  
             // "pluginId":"cordova-plugin-helloCordovaPlugin",
             // "clobbers":[
             //     "helloCordovaPlugin"

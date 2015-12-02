@@ -1,6 +1,10 @@
 console.log("====  begin to call test.js ====")
 function clickFunc(){
-    alert('这里是iOS工作室');
+    // alert('这里是iOS工作室');
+    navigator.helloCordovaPlugin.sayHello("Hello CTP",
+                                          "This is sayHello().",
+                                          "OK",
+                                          function(){ alert('call back success!');});    
 }
 var button1 = document.getElementById('button1');
 if(button1) {
@@ -13,7 +17,3 @@ if(button1) {
 
 
 
-// navigator.helloCordovaPlugin.sayHello("Hello CTP",
-//                                       "This is sayHello().",
-//                                       "OK",
-//                                       function(){ alert('call back success!');});

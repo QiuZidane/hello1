@@ -19,7 +19,7 @@ cordova.define(
                 var _message = (message || "Hello Cordova.");
                 var _button = (button || "Confirm");
                 exec(callback, null, "helloCordovaPlugin","sayHello",[_title, _message, _button]);
-             }
+             },
 
              /**
              * 在程序中打开一个对话框，显示相应信息
