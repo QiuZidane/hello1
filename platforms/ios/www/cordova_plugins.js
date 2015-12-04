@@ -5,18 +5,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         {
             "file":"plugins/helloCordovaPlugin.js",
             "id":"cordova-plugin-helloCordovaPlugin.helloCordovaPlugin", // 插件的模块编号
-            "merges":["navigator.helloCordovaPlugin"]  
-            // "pluginId":"cordova-plugin-helloCordovaPlugin",
-            // "clobbers":[
-            //     "helloCordovaPlugin"
-            // ]
-
+            "merges":["myPlugin"] // 这句定义了myPlugin为插件对象变量,myPlugin.sayHello(...)即可调用插件方法
+            // "merges":["navigator.myPlugin"]  //---->也可以加为已有对象的属性
         }
     ];
     module.exports.metadata = 
     // TOP OF METADATA
     {
-        "cordova-plugin-helloCordovaPlugin" : "0.0.1"  //这里可以定义版本号
+        "cordova-plugin-helloCordovaPlugin" : "1.0.2"  //这里可以定义版本号
     }
     // BOTTOM OF METADATA
 });

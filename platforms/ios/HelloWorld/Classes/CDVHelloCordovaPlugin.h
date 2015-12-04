@@ -12,7 +12,14 @@
 
 @interface CDVHelloCordovaPlugin : CDVPlugin<UIAlertViewDelegate>
 
-- (void) sayHello:(CDVInvokedUrlCommand*)command;
-- (void) getDeviceId:(CDVInvokedUrlCommand*)command;
+@property (nonatomic,copy)NSString *callbackId;
+@property (nonatomic)NSDictionary *resultDict;
+@property (nonatomic, assign)NSInteger buttonIndex;
+@property (nonatomic, strong)CDVHelloCordovaPluginAlertView *cdvView;
+
+- (void) iosFunc_sayHello:(CDVInvokedUrlCommand*)command;
+- (void) iosFunc_sayHello_callBack;
+- (void) iosFunc_getDeviceId:(CDVInvokedUrlCommand*)command;
+- (void) iosFunc_getOsVersion:(CDVInvokedUrlCommand*)command;
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CDVHelloCordovaPlugin;
 
-@interface CDVHelloCordovaPluginAlertView : UIAlertView
+@interface CDVHelloCordovaPluginAlertView : UIAlertView <UIAlertViewDelegate>
 
-@property (nonatomic,copy)NSString* callbackId;
+
+@property (nonatomic,strong)id hellodelegate;
 
 @end

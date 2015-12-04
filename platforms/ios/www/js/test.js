@@ -1,15 +1,42 @@
 console.log("====  begin to call test.js ====")
-function clickFunc(){
-    // alert('这里是iOS工作室');
-    navigator.helloCordovaPlugin.sayHello("Hello CTP",
-                                          "This is sayHello().",
-                                          "OK",
-                                          function(){ alert('call back success!');});    
-}
 var button1 = document.getElementById('button1');
 if(button1) {
-    button1.addEventListener('click',clickFunc,false);
+    button1.addEventListener('click',hello,false);
 }
+var button2 = document.getElementById('button2');
+if(button2) {
+    button2.addEventListener('click',getOsInfo_osVersion,false);
+}
+function hello(){
+    myPlugin.sayHello("Hello CTP",
+                      "This is sayHello().",
+                      "OK",
+                      function(param){ 
+                                         alert('call back success!');
+                                         console.log(param.para0);
+                                         alert('clickbutton='+param.buttonIndex);
+                                         alert(param.para1+" "+param.para2);
+                        },
+                      function(){ alert('call back error!');}
+    );     
+    // navigator.helloCordovaPlugin1.sayHello(....)   
+}
+
+function getOsInfo_osVersion(){
+    myPlugin.getOsVersion(successAlert,errorAlert);
+}
+function successAlert(param) {    
+    alert(param.osName+" "+param.osVersion);
+}
+function errorAlert(param) {    
+    alert(param.errorCode);
+}
+
+
+
+
+
+
 
 // document.addEventListener("DOMContentLoaded",function(){
 //     alert("We really do think that you are the best.")

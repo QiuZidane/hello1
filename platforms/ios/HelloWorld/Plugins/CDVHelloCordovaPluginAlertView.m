@@ -7,15 +7,19 @@
 //
 
 #import "CDVHelloCordovaPluginAlertView.h"
+#import "CDVHelloCordovaPlugin.h"
 
 @implementation CDVHelloCordovaPluginAlertView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    CDVHelloCordovaPlugin *hello = (CDVHelloCordovaPlugin *)self.hellodelegate;
+    hello.buttonIndex = buttonIndex;
+    [hello iosFunc_sayHello_callBack];
+
+    
 }
-*/
+
 
 @end
