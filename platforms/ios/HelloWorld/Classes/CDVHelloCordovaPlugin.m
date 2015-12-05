@@ -35,7 +35,7 @@
     CDVHelloCordovaPluginAlertView *alertView = [[CDVHelloCordovaPluginAlertView alloc]initWithTitle:title
                                                                                              message:message
                                                                                             delegate:_cdvView
-                                                                                   cancelButtonTitle:@"cancel"
+                                                                                   cancelButtonTitle:nil
                                                                                    otherButtonTitles:buttons, nil];
 
     _cdvView.hellodelegate = self;
