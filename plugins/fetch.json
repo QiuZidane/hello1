@@ -9,8 +9,9 @@
     },
     "cordova-plugin-device": {
         "source": {
-            "type": "registry",
-            "id": "cordova-plugin-device"
+            "type": "git",
+            "url": "http://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}
@@ -19,6 +20,15 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-file"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-test-framework": {
+        "source": {
+            "type": "git",
+            "url": "http://git-wip-us.apache.org/repos/asf/cordova-plugin-test-framework.git",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}

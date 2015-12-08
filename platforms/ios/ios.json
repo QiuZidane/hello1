@@ -34,6 +34,9 @@
         },
         "cordova-plugin-file": {
             "PACKAGE_NAME": "com.example.hello1"
+        },
+        "cordova-plugin-test-framework": {
+            "PACKAGE_NAME": "com.example.hello1"
         }
     },
     "dependent_plugins": {},
@@ -212,6 +215,26 @@
                 "cordova"
             ],
             "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-test-framework/www/tests.js",
+            "id": "cordova-plugin-test-framework.cdvtests",
+            "pluginId": "cordova-plugin-test-framework"
+        },
+        {
+            "file": "plugins/cordova-plugin-test-framework/www/jasmine_helpers.js",
+            "id": "cordova-plugin-test-framework.jasmine_helpers",
+            "pluginId": "cordova-plugin-test-framework"
+        },
+        {
+            "file": "plugins/cordova-plugin-test-framework/www/medic.js",
+            "id": "cordova-plugin-test-framework.medic",
+            "pluginId": "cordova-plugin-test-framework"
+        },
+        {
+            "file": "plugins/cordova-plugin-test-framework/www/main.js",
+            "id": "cordova-plugin-test-framework.main",
+            "pluginId": "cordova-plugin-test-framework"
         }
     ]
 }

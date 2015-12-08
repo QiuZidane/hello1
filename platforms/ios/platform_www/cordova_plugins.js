@@ -7,15 +7,7 @@ module.exports = [
         "clobbers": [
             "device"
         ]
-    },    
-    {
-        "file": "plugins/cordova-plugin-my/helloCordovaPlugin.js",
-        "id": "cordova-plugin-device.device",
-        // "pluginId": "cordova-plugin-device",
-        "clobbers": [
-            "myPlugin"
-        ]
-    },    
+    },
     {
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "id": "cordova-plugin-file.DirectoryEntry",
@@ -182,6 +174,26 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-test-framework/www/tests.js",
+        "id": "cordova-plugin-test-framework.cdvtests",
+        "pluginId": "cordova-plugin-test-framework"
+    },
+    {
+        "file": "plugins/cordova-plugin-test-framework/www/jasmine_helpers.js",
+        "id": "cordova-plugin-test-framework.jasmine_helpers",
+        "pluginId": "cordova-plugin-test-framework"
+    },
+    {
+        "file": "plugins/cordova-plugin-test-framework/www/medic.js",
+        "id": "cordova-plugin-test-framework.medic",
+        "pluginId": "cordova-plugin-test-framework"
+    },
+    {
+        "file": "plugins/cordova-plugin-test-framework/www/main.js",
+        "id": "cordova-plugin-test-framework.main",
+        "pluginId": "cordova-plugin-test-framework"
     }
 ];
 module.exports.metadata = 

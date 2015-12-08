@@ -11,12 +11,12 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <feature name="myFirstPlugin">
-        <param name="ios-package" value="CDVHelloCordovaPlugin" />
-    </feature>
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="myFirstPlugin">
+        <param name="ios-package" value="CDVHelloCordovaPlugin" />
+    </feature>    
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
