@@ -1,0 +1,8 @@
+{
+    "CoreMedia.framework": 1,
+    "CoreMotion.framework": 1,
+    "AVFoundation.framework": 1,
+    "SystemConfiguration.framework": 1,
+    "OpenGLES.framework": 1,
+    "CoreLocation.framework": 1
+}

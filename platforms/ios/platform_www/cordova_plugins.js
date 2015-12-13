@@ -1,6 +1,15 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/cordova-plugin-my/helloCordovaPlugin.js",
+        "id": "cordova-plugin-helloCordovaPlugin.helloCordovaPlugin",       
+        "clobbers": [
+            "myPlugin"
+        ]   //clobbers的写法与merges类似
+        // "merges":["myPlugin"] // 这句定义了myPlugin为插件对象,myPlugin.sayHello(...)即可调用插件方法
+        // "merges":["navigator.myPlugin"]  //---->也可以加为已有对象的属性        
+    },
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",
@@ -194,6 +203,19 @@ module.exports = [
         "file": "plugins/cordova-plugin-test-framework/www/main.js",
         "id": "cordova-plugin-test-framework.main",
         "pluginId": "cordova-plugin-test-framework"
+    },
+    {
+        "file": "plugins/cordova-plugin-device-tests/tests.js",
+        "id": "cordova-plugin-device-tests.tests",
+        "pluginId": "cordova-plugin-device-tests"
+    },
+    {
+        "file": "plugins/com.testfairy.cordova-plugin/www/testfairy.js",
+        "id": "com.testfairy.cordova-plugin.TestFairy",
+        "pluginId": "com.testfairy.cordova-plugin",
+        "clobbers": [
+            "TestFairy"
+        ]
     }
 ];
 module.exports.metadata = 

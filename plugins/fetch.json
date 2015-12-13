@@ -27,7 +27,25 @@
     "cordova-plugin-test-framework": {
         "source": {
             "type": "git",
-            "url": "http://git-wip-us.apache.org/repos/asf/cordova-plugin-test-framework.git",
+            "url": "https://github.com/apache/cordova-plugin-test-framework.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device-tests": {
+        "source": {
+            "type": "git",
+            "url": "http://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git",
+            "subdir": "tests"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.testfairy.cordova-plugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/testfairy/testfairy-cordova-plugin",
             "subdir": "."
         },
         "is_top_level": true,

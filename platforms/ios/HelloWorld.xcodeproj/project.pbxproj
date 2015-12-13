@@ -45,6 +45,14 @@
 		4E55AC44A28145439535FD24 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 139088F25BD4403B971BC1CD /* CDVFile.m */; };
 		92EF691656A84E49AB78EFEA /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBDAD78598348F486F25A43 /* CDVLocalFilesystem.m */; };
 		1263ACF5D1D14DE69874D150 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B661A50253244E1395E55D71 /* CDVAssetLibraryFilesystem.m */; };
+		3A834D4619834871B6D11109 /* CDVTestFairy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E487D5F785E46F49AFF1B95 /* CDVTestFairy.m */; };
+		D08EDFB14FF8488DA60B5052 /* libTestFairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0175692C704155B5930CB4 /* libTestFairy.a */; };
+		A44CB27E440E4E9D96477E58 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A23A7335FF4443BBB104E63 /* CoreMedia.framework */; };
+		FD231A0DF5B447AA960B2B15 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B0B1D0D28482BB611C96E /* CoreMotion.framework */; };
+		EB100BC96FDA4FBFA91C717E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC66F752CAD43E0AF799249 /* AVFoundation.framework */; };
+		29967207A3394722AFE18F98 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8BF03F249458FBE5B97F5 /* SystemConfiguration.framework */; };
+		C4936649F5524C06BDA03AB1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D05E05B92C4A43A41F0BC2 /* OpenGLES.framework */; };
+		48F938D9C29244AD9D17AB89 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68B0591E704747AE27D87E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +129,16 @@
 		4E093C3A321346B482B5BBF2 /* CDVFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVFile.h"; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		A7ACF5108F634EAF914E969A /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocalFilesystem.h"; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		DD469A9FAF8241DAAAF5A776 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVAssetLibraryFilesystem.h"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		8E487D5F785E46F49AFF1B95 /* CDVTestFairy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVTestFairy.m"; path = "com.testfairy.cordova-plugin/CDVTestFairy.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2B0175692C704155B5930CB4 /* libTestFairy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTestFairy.a"; path = "HelloWorld/Plugins/com.testfairy.cordova-plugin/libTestFairy.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		F4FD013D0315429FA883E91E /* TestFairy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TestFairy.h"; path = "com.testfairy.cordova-plugin/TestFairy.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		910C6CF87A00436189027130 /* CDVTestFairy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVTestFairy.h"; path = "com.testfairy.cordova-plugin/CDVTestFairy.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1A23A7335FF4443BBB104E63 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		5E9B0B1D0D28482BB611C96E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		4AC66F752CAD43E0AF799249 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		CCA8BF03F249458FBE5B97F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		A5D05E05B92C4A43A41F0BC2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGLES.framework"; path = "System/Library/Frameworks/OpenGLES.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		9E68B0591E704747AE27D87E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +150,13 @@
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				D08EDFB14FF8488DA60B5052 /* libTestFairy.a in Frameworks */,
+				A44CB27E440E4E9D96477E58 /* CoreMedia.framework in Frameworks */,
+				FD231A0DF5B447AA960B2B15 /* CoreMotion.framework in Frameworks */,
+				EB100BC96FDA4FBFA91C717E /* AVFoundation.framework in Frameworks */,
+				29967207A3394722AFE18F98 /* SystemConfiguration.framework in Frameworks */,
+				C4936649F5524C06BDA03AB1 /* OpenGLES.framework in Frameworks */,
+				48F938D9C29244AD9D17AB89 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +230,13 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				2B0175692C704155B5930CB4 /* libTestFairy.a */,
+				1A23A7335FF4443BBB104E63 /* CoreMedia.framework */,
+				5E9B0B1D0D28482BB611C96E /* CoreMotion.framework */,
+				4AC66F752CAD43E0AF799249 /* AVFoundation.framework */,
+				CCA8BF03F249458FBE5B97F5 /* SystemConfiguration.framework */,
+				A5D05E05B92C4A43A41F0BC2 /* OpenGLES.framework */,
+				9E68B0591E704747AE27D87E /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,6 +264,9 @@
 				4E093C3A321346B482B5BBF2 /* CDVFile.h */,
 				A7ACF5108F634EAF914E969A /* CDVLocalFilesystem.h */,
 				DD469A9FAF8241DAAAF5A776 /* CDVAssetLibraryFilesystem.h */,
+				8E487D5F785E46F49AFF1B95 /* CDVTestFairy.m */,
+				F4FD013D0315429FA883E91E /* TestFairy.h */,
+				910C6CF87A00436189027130 /* CDVTestFairy.h */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -431,6 +466,7 @@
 				4E55AC44A28145439535FD24 /* CDVFile.m in Sources */,
 				92EF691656A84E49AB78EFEA /* CDVLocalFilesystem.m in Sources */,
 				1263ACF5D1D14DE69874D150 /* CDVAssetLibraryFilesystem.m in Sources */,
+				3A834D4619834871B6D11109 /* CDVTestFairy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +509,10 @@
 				);
 				PRODUCT_NAME = HelloWorld;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HelloWorld/Plugins/com.testfairy.cordova-plugin\"",
+				);
 			};
 			name = Debug;
 		};
@@ -502,6 +542,10 @@
 				);
 				PRODUCT_NAME = HelloWorld;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HelloWorld/Plugins/com.testfairy.cordova-plugin\"",
+				);
 			};
 			name = Release;
 		};
