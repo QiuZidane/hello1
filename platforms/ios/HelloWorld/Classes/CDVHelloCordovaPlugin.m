@@ -55,7 +55,7 @@
     // CDVPluginResult有倆参数：CDVCommandStatus和参数内容
     // CDVCommandStatus有多个数据字典CDVCommandStatus_ERROR/CDVCommandStatus_IO_EXCEPTION等几个状态是返回调用失败
     // 参数内容有多种组装方式，下面使用的是字典方式，还可以用NSString、NSData等等
-    self.resultDict = @{@"buttonIndex":(self.buttonIndex==1?@"OK":@"cancle"),
+    self.resultDict = @{@"buttonIndex":(self.buttonIndex==1?@"OK":@"cancel"),
                         @"para0":@"This is arg0.",
                         @"para1":@"This is arg1.",
                         @"para2":@"This is arg2."};

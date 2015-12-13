@@ -10,6 +10,10 @@ module.exports = [
         // "merges":["navigator.myPlugin"]  //---->也可以加为已有对象的属性        
     },
     {
+        "file": "plugins/cordova-plugin-my/test/hello_tests.js",
+        "id": "helloCordovaPlugin.tests"            
+    },    
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",

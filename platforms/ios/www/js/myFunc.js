@@ -19,14 +19,21 @@ function hello(){
     myPlugin.sayHello("Hello CTP",
                       "This is sayHello().",
                       "OK",
-                      function(param){ 
-                                         alert('call back success!'+' \n'+'clickbutton='+param.buttonIndex+" \n"+param.para1+" "+param.para2);
-                                         console.log(param.para0);
-                        },
-                      function(){ alert('call back error!');}
+                      helloSuccessCallBack,
+                      helloErrorCallBack
     );     
     // navigator.helloCordovaPlugin1.sayHello(....)   
 }
+
+function helloSuccessCallBack(param){
+  alert('call back success!'+' \n'+'clickbutton='+param.buttonIndex+" \n"+param.para1+" "+param.para2);
+  console.log(param.para0);                       
+}
+
+function helloErrorCallBack(){
+  alert('call back error!');                  
+}
+
 
 function getOsInfo_osVersion(){
     myPlugin.getOsVersion(successAlert,errorAlert);
