@@ -13,33 +13,21 @@ exports.defineAutoTests = function() {
                         "OK",
                         helloSuccessCallBack, 
                         helloErrorCallBack
-      );          
+      );      
   };
 
   function helloSuccessCallBack(param){
-    btn = param.buttonIndex;   
-    // alert(btn);      
-    //alert('call back success!'+' \n'+'clickbutton='+param.buttonIndex+" \n"+param.para1+" "+param.para2);
-    // console.log(param.para0);                       
+    btn = param.buttonIndex;                       
   };
 
   function helloErrorCallBack(){
     alert('call back error!');                  
   }; 
 
-  var foo = {
-
-    sayhi : function(){
-        console.log('>>>calls hello()');
-        hello();
-    },
-    setBar: function(value) {
-       console.log('>>calling setBar');
-       bar = value;  
-    },   
-    setA : function() {
-      bar = 222;
-    }
+  foo = {
+    sayhi : function(){  
+      return hello();
+    }        
   };  
 
   describe('hello alert test', function () {  
@@ -47,40 +35,20 @@ exports.defineAutoTests = function() {
     var timerCallback;      
 
     beforeEach(function() {
-      spyOn(foo, 'sayhi').and.callThrough();
-      foo.sayhi();
-      console.log('>>>>>>beforeEach>>>>>>');
-      // jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000; //设置异步执行默认延时时间为10秒，超过会报错退出。
-
+      jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000; //设置异步执行默认延时时间为10秒，超过会报错退出。
       // timerCallback = jasmine.createSpy("timerCallback");
-
-      // spyOn(foo, 'sayhi').and.callThrough();  // .and.callThrough();在获取spy时调用实际函数(这里包括回调)
+      //spyOn(foo, 'sayhi').and.callThrough();  // .and.callThrough();在获取spy时调用实际函数(这里包括回调)
       //foo.sayhi();      // 这句会在每个it都运行一次，但要注意的是，回调只有第一次获取say时才会调用，后面没有调用回调，只弹出框了      
     });
 
     afterEach(function() {
       // foo.sayhi.and.stub();
-      foo.sayhi.calls.reset();  //重置Spy的所有追踪数据
-      
+      // foo.sayhi.calls.reset();
     });
     
-    it("tracks that the spy was called", function() { 
-      expect(foo.sayhi).toHaveBeenCalled(); 
-    });    
-   
-    // it("同步触发setTimeout", function() {
-    //     setTimeout(function() {
-    //         timerCallback();
-    //     }, 100); 
-    //     expect(timerCallback).not.toHaveBeenCalled(); 
-    //     jasmine.clock().tick(101); 
-    //     expect(timerCallback).toHaveBeenCalled();
-    // });   
 
     it("异步测试1", function(done) {
-        // foo.sayhi();  // 回调会将btn设置为"cancel"
-        foo.ssshi();
-        // expect(foo.ssshi).toHaveBeenCalled(); 
+        foo.sayhi();  // 回调会将btn设置为"cancel"
         setTimeout(function() {  
             console.log('TimeOut!');
             expect(btn).toEqual("cancel"); 
@@ -91,7 +59,7 @@ exports.defineAutoTests = function() {
 
     it("异步测试2", function(done) {
         setTimeout(function() {
-          console.log('111');
+          console.log('异步测试2');
           done();
         },1000);
         expect(btn).toEqual("cancel"); 

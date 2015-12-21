@@ -70,6 +70,7 @@
 }
 
 
+
 - (void) iosFunc_getOsVersion:(CDVInvokedUrlCommand*)command{
     NSString *osName = [[UIDevice currentDevice] systemName];
     NSString *osVersion = [[UIDevice currentDevice] systemVersion];

@@ -16,14 +16,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-file": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-file"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-test-framework": {
         "source": {
             "type": "git",
@@ -42,11 +34,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.testfairy.cordova-plugin": {
+    "cordova-plugin-audio-recorder-api": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/testfairy/testfairy-cordova-plugin",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-audio-recorder-api"
         },
         "is_top_level": true,
         "variables": {}

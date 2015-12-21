@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 #import "CDVHelloCordovaPluginAlertView.h"
+#import "TEST.h"
 
 @interface CDVHelloCordovaPlugin : CDVPlugin<UIAlertViewDelegate>
 
