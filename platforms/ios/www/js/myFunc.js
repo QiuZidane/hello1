@@ -11,8 +11,8 @@ EZVAR = {
                         helloErrorCallBack
       );       
   },
-  // ez_getDP : getDeviceProperties() // 因为device.js加载晚于myFunc.js，这样定义会导致device未定义
-  // 
+//   ez_getDP : getDeviceProperties() // 因为device.js加载晚于myFunc.js，这样定义会导致device未定义
+  //
   // 
 }
 
@@ -63,7 +63,6 @@ function getDeviceProperties() {
 
 
 
-
 // --------检测失败用---------
 window.onerror = function(msg, url, line) {  
    var idx = url.lastIndexOf("/");  
@@ -88,8 +87,8 @@ if(button2) {
 }
 var button3 = document.getElementById('button3');
 if(button3) {
-    button3.addEventListener('click',EZVAR.ez_sayHello,false);
-    // button3.addEventListener('click',getDeviceProperties,false);
+//    button3.addEventListener('click',EZVAR.ez_sayHello,false);
+     button3.addEventListener('click',getDeviceProperties,false);
 }
 
 
