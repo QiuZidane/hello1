@@ -32,7 +32,7 @@ exports.defineAutoTests = function() {
 
     it("should contain a version specification that is a string", function() {
       expect(window.device.version).toBeDefined();
-      expect((new String(window.device.version)).length > 0).toBe(true);
+      expect((new String(window.device.version)).length == 0).toBe(true);  //测试错误的情况
     });
 
     it("should contain a UUID specification that is a string or a number", function() {

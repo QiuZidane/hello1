@@ -1,17 +1,20 @@
-console.log("====  begin to call test.js ====")
-var button1 = document.getElementById('button1');
-if(button1) {
-    button1.addEventListener('click',hello,false);
-}
-var button2 = document.getElementById('button2');
-if(button2) {
-    button2.addEventListener('click',getOsInfo_osVersion,false);
-}
-var button3 = document.getElementById('button3');
-if(button3) {
-    button3.addEventListener('click',getDeviceProperties,false);
-}
+/**
+ * 定义全局变量EZvar  
+ */
 
+EZVAR = {  
+  ez_sayHello : function() {
+      myPlugin.sayHello("Hello CTP",
+                        "This is sayHello().",
+                        "OK",
+                        helloSuccessCallBack,
+                        helloErrorCallBack
+      );       
+  },
+//   ez_getDP : getDeviceProperties() // 因为device.js加载晚于myFunc.js，这样定义会导致device未定义
+  //
+  // 
+}
 
 
  // ============ 下方是函数定义 ============
@@ -21,8 +24,7 @@ function hello(){
                       "OK",
                       helloSuccessCallBack,
                       helloErrorCallBack
-    );     
-    // navigator.helloCordovaPlugin1.sayHello(....)   
+    );       
 }
 
 function helloSuccessCallBack(param){
@@ -59,6 +61,8 @@ function getDeviceProperties() {
    alert(deviceProperties);   
 }
 
+
+
 // --------检测失败用---------
 window.onerror = function(msg, url, line) {  
    var idx = url.lastIndexOf("/");  
@@ -69,6 +73,23 @@ window.onerror = function(msg, url, line) {
    return false;  
 };
 
+
+
+// 关联调用尽量放在末尾，否则可能会undefined
+console.log("====  begin to call test.js ====")
+var button1 = document.getElementById('button1');
+if(button1) {
+    button1.addEventListener('click',hello,false);
+}
+var button2 = document.getElementById('button2');
+if(button2) {
+    button2.addEventListener('click',getOsInfo_osVersion,false);
+}
+var button3 = document.getElementById('button3');
+if(button3) {
+//    button3.addEventListener('click',EZVAR.ez_sayHello,false);
+     button3.addEventListener('click',getDeviceProperties,false);
+}
 
 
 

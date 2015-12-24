@@ -13,16 +13,13 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.example.hello"
         },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.example.hello1"
-        },
         "cordova-plugin-test-framework": {
             "PACKAGE_NAME": "com.example.hello1"
         },
         "cordova-plugin-device-tests": {
             "PACKAGE_NAME": "com.example.hello1"
         },
-        "com.testfairy.cordova-plugin": {
+        "cordova-plugin-audio-recorder-api": {
             "PACKAGE_NAME": "com.example.hello1"
         }
     },
