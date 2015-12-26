@@ -114,7 +114,7 @@ exports.defineAutoTests = function() {
     });    
 
     it("foo.sayhi调用时的参数=？", function() {      
-      expect(foo.sayhi.calls.argsFor(1)).toEqual(null);
+      expect(foo.sayhi.calls.argsFor(1)).toEqual([]);
     });    
 
   }); 

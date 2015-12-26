@@ -92,5 +92,13 @@ if(button3) {
 }
 
 
-
+if(typeof(Storage)!=="undefined")
+{
+    console.log("Yes! localStorage and sessionStorage support!");
+    // Some code.....
+}
+else
+{
+    consolg.log(" Sorry! No web storage support..");
+}
 
